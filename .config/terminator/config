@@ -1,0 +1,69 @@
+[global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  handle_size = 5
+[keybindings]
+  toggle_zoom = <Alt>f
+  scaled_zoom = <Alt>z
+  switch_to_tab_10 = <Alt>0
+  resize_up = <Primary><Shift>Up
+  resize_left = <Primary><Shift>Left
+  split_horiz = <Shift><Alt>d
+  switch_to_tab_6 = <Alt>6
+  switch_to_tab_7 = <Alt>7
+  switch_to_tab_4 = <Alt>4
+  switch_to_tab_5 = <Alt>5
+  split_vert = <Alt>d
+  switch_to_tab_3 = <Alt>3
+  switch_to_tab_1 = <Alt>1
+  switch_to_tab_2 = <Alt>2
+  resize_right = <Primary><Shift>Right
+  resize_down = <Primary><Shift>Down
+  switch_to_tab_8 = <Alt>8
+  switch_to_tab_9 = <Alt>9
+[profiles]
+  [[default]]
+    word_chars = "-A-Za-z0-9,./?%&#_"
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    font = Inconsolata Medium 14
+    background_image = /home/opsi/Imágenes/vim-shortcuts2560x1600.png
+    background_darkness = 0.0
+    use_system_font = False
+    foreground_color = "#ffffff"
+    scroll_on_output = False
+    use_theme_colors = True
+    show_titlebar = False
+    copy_on_selection = True
+    background_color = "#464646"
+    scrollback_infinite = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+  [[two terms]]
+    [[[child0]]]
+      position = 548:422
+      type = Window
+      order = 0
+      parent = ""
+      size = 728, 444
+    [[[child1]]]
+      position = 222
+      type = VPaned
+      order = 0
+      parent = child0
+    [[[terminal3]]]
+      profile = default
+      type = Terminal
+      order = 1
+      parent = child1
+    [[[terminal2]]]
+      profile = default
+      type = Terminal
+      order = 0
+      parent = child1
+[plugins]
