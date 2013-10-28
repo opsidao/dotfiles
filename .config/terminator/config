@@ -27,6 +27,7 @@
     font = Inconsolata Medium 14
     background_image = /home/opsi/Imágenes/vim-shortcuts2560x1600.png
     background_darkness = 0.0
+    login_shell = True
     use_system_font = False
     foreground_color = "#ffffff"
     scroll_on_output = False
