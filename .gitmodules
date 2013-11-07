@@ -1,0 +1,3 @@
+[submodule ".janus/vim-rvm"]
+	path = .janus/vim-rvm
+	url = https://github.com/tpope/vim-rvm.git
