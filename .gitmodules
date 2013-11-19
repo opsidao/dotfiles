@@ -4,3 +4,6 @@
 [submodule ".janus/vim-airline"]
 	path = .janus/vim-airline
 	url = https://github.com/bling/vim-airline.git
+[submodule ".janus/vim-multiple-cursors"]
+	path = .janus/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
