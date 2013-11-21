@@ -21,3 +21,9 @@ set wmh=0
 
 " Context lines
 set so=4
+
+" tmux + terminal + vi
+if has("mouse")
+  set mouse=a
+  set mousehide
+endif
