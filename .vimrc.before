@@ -26,4 +26,8 @@ set so=4
 if has("mouse")
   set mouse=a
   set mousehide
+  if &term =~ '^screen'
+    " tmux knows the extended mouse mode
+    set ttymouse=xterm2
+  endif
 endif
