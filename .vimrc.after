@@ -13,5 +13,5 @@ command! -range=% FixWhitespace call <SID>FixWhitespace(<line1>,<line2>)
 " Show YankRing on <leader>+y
 nnoremap <silent> <leader>y :YRShow<CR>
 
-" Remove trailing whitespaces with F2
-map <silent> <leader>fw :FixWhitespace<CR>
+" Remove trailing whitespaces on save
+autocmd BufWritePre * :FixWhitespace
