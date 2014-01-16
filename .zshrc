@@ -37,8 +37,4 @@ source ~/.profile
 # Customize to your needs...
 export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:$PATH
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-export ANDROID_HOME=~/android-sdks/
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-export ANT_ARGS='-logger org.apache.tools.ant.listener.AnsiColorLogger'
+eval "$(rbenv init -)"
