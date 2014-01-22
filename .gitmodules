@@ -7,3 +7,9 @@
 [submodule ".janus/vim-multiple-cursors"]
 	path = .janus/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule ".janus/vim-misc"]
+	path = .janus/vim-misc
+	url = https://github.com/xolox/vim-misc.git
+[submodule ".janus/vim-easytags"]
+	path = .janus/vim-easytags
+	url = https://github.com/xolox/vim-easytags.git
