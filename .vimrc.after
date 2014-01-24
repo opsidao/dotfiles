@@ -1,6 +1,9 @@
 " Use solarized to highlight trailing white spaces
 let g:solarized_hitrail = 1
 
+" Disable easytags automatic highlighting
+let g:easytags_auto_highlight = 0
+
 function! s:FixWhitespace(line1,line2)
   let l:save_cursor = getpos(".")
   silent! execute ':' . a:line1 . ',' . a:line2 . 's/\s\+$//'
