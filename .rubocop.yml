@@ -1,4 +1,8 @@
 Encoding:
   Enabled: false
+
 LineLength:
   Max: 100
+
+Documentation:
+  Enabled: false
