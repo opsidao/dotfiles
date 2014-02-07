@@ -1,3 +1,6 @@
+" Use the_silver_searcher for Ack searches
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
 " Use solarized to highlight trailing white spaces
 let g:solarized_hitrail = 1
 
