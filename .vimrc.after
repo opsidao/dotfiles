@@ -1,6 +1,10 @@
 " Use the_silver_searcher for Ack searches
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
+" Enable rubocop with syntastic
+let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+let g:syntastic_quiet_warnings = 0
+
 " Use solarized to highlight trailing white spaces
 let g:solarized_hitrail = 1
 
