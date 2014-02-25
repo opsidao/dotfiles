@@ -43,4 +43,9 @@ ulimit -n 2048
 # Load rbenv
 eval "$(rbenv init -)"
 
+# To please bundler
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
 
+# Set the editor
+export EDITOR=vim
