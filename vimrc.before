@@ -35,3 +35,6 @@ if has("mouse")
     set ttymouse=xterm2
   endif
 endif
+
+" associate *.rep with ruby filetype (for representative templates)
+au BufRead,BufNewFile *.rep setfiletype ruby

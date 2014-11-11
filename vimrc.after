@@ -27,4 +27,4 @@ command! -range=% FixWhitespace call <SID>FixWhitespace(<line1>,<line2>)
 autocmd BufWritePre * :FixWhitespace
 
 " Set the color scheme
-colorscheme railscasts
+colorscheme xoria256
