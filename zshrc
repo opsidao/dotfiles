@@ -101,11 +101,6 @@ alias be="bundle exec"
 # Enable history on iex
 export ERL_AFLAGS="-kernel shell_history enabled"
 
-eval "$(rbenv init -)"
-
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-
 source "$HOME/.kube/completion.zsh.inc"
 
 kv() {
