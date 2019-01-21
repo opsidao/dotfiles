@@ -1,3 +1,0 @@
-set gfn=Liberation\ Mono\ 14
-colorscheme railscasts
-let g:NERDTreeWinSize = 40

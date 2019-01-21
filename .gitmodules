@@ -1,21 +1,3 @@
 [submodule "janus/vim-rvm"]
 	path = janus/vim-rvm
 	url = https://github.com/tpope/vim-rvm.git
-[submodule "janus/vim-airline"]
-	path = janus/vim-airline
-	url = https://github.com/bling/vim-airline.git
-[submodule "janus/vim-multiple-cursors"]
-	path = janus/vim-multiple-cursors
-	url = https://github.com/terryma/vim-multiple-cursors.git
-[submodule "janus/vim-misc"]
-	path = janus/vim-misc
-	url = https://github.com/xolox/vim-misc.git
-[submodule "janus/vim-easytags"]
-	path = janus/vim-easytags
-	url = https://github.com/xolox/vim-easytags.git
-[submodule "janus/vim-rubocop"]
-	path = janus/vim-rubocop
-	url = https://github.com/ngmy/vim-rubocop.git
-[submodule "janus/vimux"]
-	path = janus/vimux
-	url = https://github.com/benmills/vimux.git
