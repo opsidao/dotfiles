@@ -19,8 +19,10 @@ set foldlevel=20
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'brooth/far.vim'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'elixir-editors/vim-elixir'
 Plug 'flazz/vim-colorschemes'
 Plug 'godlygeek/tabular'
 Plug 'jiangmiao/auto-pairs'
@@ -34,6 +36,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'plasticboy/vim-markdown'
 Plug 'scrooloose/nerdtree'
 Plug 'slashmili/alchemist.vim'
+Plug 'slashmili/alchemist.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
@@ -44,7 +47,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-ruby/vim-ruby'
 Plug 'w0rp/ale'
-Plug 'elixir-editors/vim-elixir'
 
 call plug#end()
 
@@ -86,7 +88,7 @@ let g:ale_fixers = {
 \       'mix_format',
 \   ],
 \   '*': [
-\       'trim_whitespace', 
+\       'trim_whitespace',
 \       'remove_trailing_lines'
 \   ]
 \}
@@ -119,3 +121,6 @@ vnoremap <C-h> "hy:%s/<C-r>h//gc<left><left><left>
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 endif
+
+" Run deoplete on startup
+let g:deoplete#enable_at_startup = 1
