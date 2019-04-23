@@ -5,3 +5,5 @@ name = Juan González
 email = juan.gonzalez@xing.com
 [hub]
 	host = source.xing.com
+[core]
+	excludesfile = /Users/juan.gonzalez/.gitignore_global
