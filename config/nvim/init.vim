@@ -50,8 +50,8 @@ Plug 'w0rp/ale'
 
 call plug#end()
 
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
+if executable('rg')
+  let g:ackprg = 'rg --vimgrep'
 endif
 
 colorscheme 1989
