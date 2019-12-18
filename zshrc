@@ -92,6 +92,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias cat=bat
 alias k=kubectl
 alias vim=nvim
 alias vi=nvim
@@ -101,7 +102,12 @@ alias be="bundle exec"
 # Enable history on iex
 export ERL_AFLAGS="-kernel shell_history enabled"
 
-source "$HOME/.kube/completion.zsh.inc"
+# Completion for k8s
+source <(kompose completion zsh)
+source <(kubectl completion zsh)
+
+# Completion for aws cli
+source /usr/local/bin/aws_zsh_completer.sh
 
 kv() {
   COMMAND=$1

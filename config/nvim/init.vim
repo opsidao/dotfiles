@@ -97,6 +97,7 @@ let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_delay = 100
 let g:ale_fix_on_save = 1
+let g:ale_ruby_rubocop_executable = 'bundle' " See https://github.com/dense-analysis/ale/issues/1403
 
 " Go back to last known possition when opening a buffer
 autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
