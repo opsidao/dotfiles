@@ -15,7 +15,7 @@ set number relativenumber
 set foldmethod=syntax
 set foldlevel=20
 
-" let mapleader = ","
+let mapleader = ","
 
 call plug#begin('~/.vim/plugged')
 
