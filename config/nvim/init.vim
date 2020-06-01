@@ -95,7 +95,8 @@ let g:ale_fix_on_save = 1
 let g:ale_ruby_rubocop_executable = 'bundle' " See https://github.com/dense-analysis/ale/issues/1403
 
 " Setup denite
-nnoremap <C-p> :<C-u>Denite file/rec<CR>
+nnoremap <C-p> :<C-u>Denite file/rec -start_filter<CR>
+nnoremap <C-b> :<C-u>Denite buffer -start_filter<CR>
 
 " Stolen from https://github.com/ctaylo21/jarvis/blob/master/config/nvim/init.vim
 try
@@ -137,7 +138,6 @@ call denite#custom#var('buffer', 'date_format', '')
 "   highlight_matched_char  - Matched characters highlight
 "   highlight_matched_range - matched range highlight
 let s:denite_options = {'default' : {
-\ 'start_filter': 1,
 \ 'highlight_matched_char': 'QuickFixLine',
 \ 'highlight_matched_range': 'Visual',
 \ 'highlight_window_background': 'Visual',
