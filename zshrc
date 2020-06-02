@@ -145,3 +145,11 @@ fpath=(${ASDF_DIR}/completions $fpath)
 # initialise completions with ZSH's compinit
 autoload -Uz compinit
 compinit
+
+
+# Secret stuff dude ;P
+SECRETS_FILE=$HOME/.zshrc.secrets
+
+if [[ -e $SECRETS_FILE ]]; then
+  source $SECRETS_FILE
+fi
