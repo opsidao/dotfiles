@@ -2,11 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-if [[ `uname` == "Darwin" ]]; then
-  export ZSH="/Users/juan.gonzalez/.oh-my-zsh "
-else
-  export ZSH="/home/opsidao/.oh-my-zsh"
-fi
+export ZSH="$HOME/.oh-my-zsh"
 
 export PATH=$PATH:$HOME/.dotfiles/bin
 
@@ -133,10 +129,10 @@ kv() {
 }
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/juan.gonzalez/code/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/juan.gonzalez/code/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f "$HOME/code/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/code/google-cloud-sdk/path.zsh.inc"; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/juan.gonzalez/code/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/juan.gonzalez/code/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f "$HOME/code/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/code/google-cloud-sdk/completion.zsh.inc"; fi
 
 . $HOME/.asdf/asdf.sh
 
