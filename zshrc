@@ -113,10 +113,6 @@ alias kubexec="kubectl get pods -A --field-selector=status.phase=Running | tail 
 # Enable history on iex
 export ERL_AFLAGS="-kernel shell_history enabled"
 
-# Completion for k8s
-type kompose > /dev/null && source <(kompose completion zsh)
-type kubectl > /dev/null && source <(kubectl completion zsh)
-
 # Completion for aws cli
 if [[ -e /usr/local/bin/aws_zsh_completer.sh ]]; then
   source /usr/local/bin/aws_zsh_completer.sh
@@ -134,7 +130,11 @@ if [ -f "$HOME/code/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/code/google-
 # The next line enables shell command completion for gcloud.
 if [ -f "$HOME/code/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/code/google-cloud-sdk/completion.zsh.inc"; fi
 
+# Load asdf
 . $HOME/.asdf/asdf.sh
+
+# Completion for k8s
+source <(kubectl completion zsh)
 
 # append completions to fpath
 fpath=(${ASDF_DIR}/completions $fpath)
