@@ -139,6 +139,11 @@ fpath=(${ASDF_DIR}/completions $fpath)
 autoload -Uz compinit
 compinit
 
+if [ $commands[gh] ]; then
+  source <(gh completion --shell zsh)
+  compdef _gh gh
+  compdump
+fi
 
 # Secret stuff dude ;P
 SECRETS_FILE=$HOME/.zshrc.secrets
