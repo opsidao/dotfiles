@@ -130,9 +130,6 @@ if [ -f "$HOME/code/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/code/google-
 # The next line enables shell command completion for gcloud.
 if [ -f "$HOME/code/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/code/google-cloud-sdk/completion.zsh.inc"; fi
 
-# Load asdf
-. $HOME/.asdf/asdf.sh
-
 # Completion for k8s
 source <(kubectl completion zsh)
 
@@ -149,3 +146,12 @@ SECRETS_FILE=$HOME/.zshrc.secrets
 if [[ -e $SECRETS_FILE ]]; then
   source $SECRETS_FILE
 fi
+
+export BAT_THEME=GitHub
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+. $HOME/.asdf/asdf.sh
