@@ -108,8 +108,8 @@ alias vim=nvim
 alias vi=nvim
 alias xingbox_build="xing x b --branch=xtm:$(git_current_branch) && xing x r --app xtmworker"
 alias be="bundle exec"
-alias kubexec="kubectl get pods -A --field-selector=status.phase=Running | tail -n +2 | peco | tr -s ' ' | cut -d' ' -f1,2 | xargs printf 'kubectl exec --namespace=%s -ti %s bash' | xargs -ot -I{} bash -c {}"
-
+alias kubexec="kubectl get pods -A --field-selector=status.phase=Running | tail -n +2 | peco | tr -s ' ' | cut -d' ' -f1,2 | xargs printf 'kubectl exec --namespace=%s -ti %s -- bash' | xargs -ot -I{} bash -c {}"
+alias deploy_current_branch_to_preview="git push -f origin  `git_current_branch`:preview"
 # Enable history on iex
 export ERL_AFLAGS="-kernel shell_history enabled"
 
