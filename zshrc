@@ -159,4 +159,9 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+if [ "`uname -m`" = 'x86_64' ]
+then
+  export PATH=/usr/local/Homebrew/bin/:$PATH
+fi
+
 . $HOME/.asdf/asdf.sh
