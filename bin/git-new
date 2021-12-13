@@ -12,20 +12,18 @@ unless issue
   exit 1
 end
 
-issue = issue.downcase
-
-jira_base_url = ENV['JIRA_BASE_URL']
+jira_server = ENV['JIRA_SERVER']
 jira_user = ENV['JIRA_USER']
 jira_token = ENV['JIRA_TOKEN']
 
-unless jira_base_url && jira_user && jira_token
-  puts 'please set JIRA_BASE_URL, JIRA_USER and JIRA_TOKEN'
+unless jira_server && jira_user && jira_token
+  puts 'please set JIRA_SERVER, JIRA_USER and JIRA_TOKEN'
 
   exit 1
 end
 
-uri = URI("#{jira_base_url}#{issue}")
-
+issue = issue.downcase
+uri = URI("#{jira_server}/rest/api/2/issue/#{issue}")
 req = Net::HTTP::Get.new(uri.request_uri)
 
 req.basic_auth jira_user, jira_token
@@ -36,18 +34,16 @@ end
 
 body = JSON.parse(res.body)
 
-if body['errorMessages']
-  puts body['errorMessages']
-else
-  summary = body['fields']['summary']
-            .downcase
-            .strip # trim spaces
-            .gsub(/\W+/, '-') # non alphabetical chars to -
-            .gsub(/-+/, '-') # remove duplicated -
+summary = body['fields']['summary']
+          .downcase
+          .strip # trim spaces
+          .gsub(/\W+/, '-') # non alphabetical chars to -
+          .gsub(/-+/, '-') # remove duplicated -
+          .gsub(/-$/, '') # remove trailing -
 
-  # remove project prefix
-  code = issue.gsub(/^\w+-/, '')
+summary = summary[0..69] # this ensures we don't hit limits in some tools (e.g Netlify)
 
-  `git checkout -b #{code}-#{summary}`
-end
+# remove project prefix
+issue_id = issue.gsub(/^\w+-/, '')
 
+`git checkout -b #{issue_id}-#{summary}`
