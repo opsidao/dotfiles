@@ -145,6 +145,10 @@ if [ $commands[gh] ]; then
   compdump
 fi
 
+
+# AWS autocomplete
+complete -C '/usr/local/bin/aws_completer' aws
+
 # Secret stuff dude ;P
 SECRETS_FILE=$HOME/.zshrc.secrets
 
