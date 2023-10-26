@@ -7,3 +7,5 @@ email = juan.gonzalez@femtasy.com
 	host = source.xing.com
 [core]
 	excludesfile = /Users/juan.gonzalez/.gitignore_global
+[alias]
+    cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop\\|main' | xargs -n 1 -r git branch -d"
