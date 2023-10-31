@@ -1,11 +1,7 @@
-# This is Git's per-user configuration file.
 [user]
-# Please adapt and uncomment the following lines:
-name = Juan González
-email = juan.gonzalez@femtasy.com
-[hub]
-	host = source.xing.com
+  name = Juan González
+  email = juan.gonzalez@prima.it
 [core]
-	excludesfile = /Users/juan.gonzalez/.gitignore_global
+  excludesfile = ~/.gitignore_global
 [alias]
-    cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop\\|main' | xargs -n 1 -r git branch -d"
+  cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop\\|main' | xargs -n 1 -r git branch -d"
