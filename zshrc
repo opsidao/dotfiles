@@ -168,4 +168,6 @@ then
   export PATH=/usr/local/Homebrew/bin/:$PATH
 fi
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 . $HOME/.asdf/asdf.sh
