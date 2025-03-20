@@ -1,1 +1,4 @@
 **/vendor/bundle
+_build_mac
+deps_mac
+.DS_Store
