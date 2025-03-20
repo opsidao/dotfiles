@@ -1,7 +1,8 @@
 [user]
   name = Juan González
-  email = juan.gonzalez@prima.it
+  email = juan.gonzalezaguilera@prima.it
 [core]
   excludesfile = ~/.gitignore_global
+	hooksPath = /Users/juangonzalezaguilera/code/prima/security-hooks/hooks
 [alias]
   cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop\\|main' | xargs -n 1 -r git branch -d"
