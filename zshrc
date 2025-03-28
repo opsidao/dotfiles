@@ -156,12 +156,8 @@ if [[ -e $SECRETS_FILE ]]; then
   source $SECRETS_FILE
 fi
 
-export BAT_THEME=GitHub
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+export BAT_THEME=DarkNeon
+export KERL_CONFIGURE_OPTIONS="--disable-debug --disable-silent-rules --enable-dynamic-ssl-lib --enable-gettimeofday-as-os-system-time --enable-kernel-poll --without-javac --without-wx --without-odbc --disable-jit"
 
 if [ "`uname -m`" = 'x86_64' ]
 then
