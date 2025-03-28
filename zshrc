@@ -166,4 +166,13 @@ fi
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-. $HOME/.asdf/asdf.sh
+export VAULT_ADDR=https://vault.helloprima.com:8200
+
+export PATH=$HOME/code/prima/edgar:$PATH
+
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+export PATH="$HOME/aws-cli:$PATH"
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="$HOME/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
