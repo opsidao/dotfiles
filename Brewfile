@@ -1,4 +1,5 @@
 tap "hashicorp/tap"
+tap "jesseduffield/lazydocker"
 tap "zkondor/dist"
 
 brew "asdf"
@@ -9,6 +10,7 @@ brew "git"
 brew "gitleaks"
 brew "hashicorp/tap/vault"
 brew "hub"
+brew "jesseduffield/lazydocker/lazydocker"
 brew "k9s"
 brew "kubelogin"
 brew "neovim"
