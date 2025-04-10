@@ -15,6 +15,7 @@ brew "k9s"
 brew "kubelogin"
 brew "neovim"
 brew "rcm"
+brew "ripgrep"
 brew "tig"
 
 cask "dbeaver-community"
