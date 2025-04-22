@@ -18,6 +18,7 @@ brew "rcm"
 brew "ripgrep"
 brew "tig"
 
+cask "alfred"
 cask "dbeaver-community"
 cask "maccy"
 cask "plex"
