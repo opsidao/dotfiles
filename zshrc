@@ -170,6 +170,8 @@ export PATH=$HOME/code/prima/edgar:$PATH
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 export PATH="$HOME/aws-cli:$PATH"
 
+. "$HOME/.cargo/env"
+
 # Completion for k8s
 source <(kubectl completion zsh)
 
