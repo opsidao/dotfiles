@@ -130,9 +130,6 @@ if [ -f "$HOME/code/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/code/google-
 # The next line enables shell command completion for gcloud.
 if [ -f "$HOME/code/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/code/google-cloud-sdk/completion.zsh.inc"; fi
 
-# Completion for k8s
-source <(kubectl completion zsh)
-
 # append completions to fpath
 fpath=(${ASDF_DIR}/completions $fpath)
 # initialise completions with ZSH's compinit
@@ -172,6 +169,9 @@ export PATH=$HOME/code/prima/edgar:$PATH
 
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 export PATH="$HOME/aws-cli:$PATH"
+
+# Completion for k8s
+source <(kubectl completion zsh)
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="$HOME/.rd/bin:$PATH"
