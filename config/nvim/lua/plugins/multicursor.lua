@@ -35,10 +35,10 @@ return {
       mc.matchSkipCursor(-1)
     end)
 
-    -- Add and remove cursors with control + left click.
-    set("n", "<c-leftmouse>", mc.handleMouse)
-    set("n", "<c-leftdrag>", mc.handleMouseDrag)
-    set("n", "<c-leftrelease>", mc.handleMouseRelease)
+    -- Add and remove cursors with alt + left click.
+    set("n", "<a-leftmouse>", mc.handleMouse)
+    set("n", "<a-leftdrag>", mc.handleMouseDrag)
+    set("n", "<a-leftrelease>", mc.handleMouseRelease)
 
     -- Disable and enable cursors.
     set({ "n", "x" }, "<c-q>", mc.toggleCursor)
