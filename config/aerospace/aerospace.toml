@@ -46,6 +46,11 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 # Also see: https://nikitabobko.github.io/AeroSpace/goodies#disable-hide-app
 automatically-unhide-macos-hidden-apps = false
 
+# Move mouse to center of focused window when focus changes
+# See: https://nikitabobko.github.io/AeroSpace/guide#on-focus-changed-callbacks
+# See: https://nikitabobko.github.io/AeroSpace/commands#move-mouse
+on-focus-changed = ['move-mouse window-lazy-center']
+
 # List of workspaces that should stay alive even when they contain no windows,
 # even when they are invisible.
 # This config option is only available since 'config-version = 2'
