@@ -170,6 +170,9 @@ export PATH=$HOME/code/prima/edgar:$PATH
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 export PATH="$HOME/aws-cli:$PATH"
 
+export MIX_BUILD_ROOT="_build_outside_docker"
+export MIX_DEPS_PATH="deps_outside_docker"
+
 . "$HOME/.cargo/env"
 
 # Completion for k8s

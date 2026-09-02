@@ -1,4 +1,5 @@
 **/vendor/bundle
-_build_mac
-deps_mac
 .DS_Store
+
+_build_outside_docker/
+deps_outside_docker/
